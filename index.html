@@ -4,37 +4,169 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jan Seva Portal</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<h1>Jan Seva Portal</h1>
-
-<div class="card">PM Kisan Yojana</div>
-<div class="card">UP Scholarship</div>
-<div class="card">Haryana Labour Card</div>
-
-</body>
-</html>
-body{
-font-family:Arial, sans-serif;
-background:#f5f5f5;
-padding:20px;
+<style>
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
-h1{
+body{
+background:#f4f7fb;
+color:#222;
+}
+
+header{
+background:linear-gradient(135deg,#0a7cff,#00b894);
+color:white;
+padding:30px 20px;
 text-align:center;
+}
+
+header h1{
+font-size:38px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:30px 20px;
+}
+
+.section-title{
+font-size:28px;
+margin-bottom:20px;
 color:#0a4;
-margin-bottom:30px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .card{
 background:white;
-padding:15px;
-margin:12px auto;
-max-width:500px;
-border-radius:12px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
 font-weight:bold;
+text-align:center;
 }
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.form-box{
+background:white;
+padding:25px;
+margin-top:40px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.form-box h2{
+margin-bottom:15px;
+color:#0a4;
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:10px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:14px;
+background:#0a7cff;
+color:white;
+border:none;
+border-radius:10px;
+font-size:17px;
+cursor:pointer;
+}
+
+button:hover{
+background:#065fd4;
+}
+
+.contact{
+margin-top:40px;
+text-align:center;
+background:#00b894;
+color:white;
+padding:20px;
+border-radius:15px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:40px;
+background:#111;
+color:white;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Jan Seva Portal</h1>
+<p>Government Schemes, Certificates & Online Services</p>
+</header>
+
+<div class="container">
+
+<h2 class="section-title">Popular Services</h2>
+
+<div class="grid">
+<div class="card">PM Kisan Yojana</div>
+<div class="card">UP Scholarship</div>
+<div class="card">Haryana Labour Card</div>
+<div class="card">Ayushman Card</div>
+<div class="card">PAN Card Apply</div>
+<div class="card">Income Certificate</div>
+<div class="card">Caste Certificate</div>
+<div class="card">Govt Job Form</div>
+</div>
+
+<div class="form-box">
+<h2>Apply / Enquiry Form</h2>
+<input type="text" placeholder="Full Name">
+<input type="tel" placeholder="Mobile Number">
+<select>
+<option>Select Service</option>
+<option>Scholarship</option>
+<option>Labour Card</option>
+<option>PAN Card</option>
+<option>Certificate</option>
+</select>
+<button>Submit Request</button>
+</div>
+
+<div class="contact">
+<h2>Need Help?</h2>
+<p>Call / WhatsApp: 9557887780</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 Jan Seva Portal | All Rights Reserved
+</footer>
+
+</body>
+</html>
