@@ -206,8 +206,26 @@ margin-top:30px;
 <option>Labour Card</option>
 <option>Pension</option>
 </select>
+<div class="card">
+  
+<h3>Online Payment</h3>
+
+<a href="upi://pay?pa=9557887780-2@ybl&pn=Jan%20Seva%20Portal&cu=INR">
+<button>Pay via UPI</button>
+</a>
+
 <a href="https://wa.me/919557887780" target="_blank">
-<button>Contact on WhatsApp</button>
+<button style="margin-top:10px;background:#25D366;">WhatsApp Support</button>
+</a>
+</div>
+  
+  <button type="submit" id="btn" disabled>Submit Now</button>
+
+<script>
+setTimeout(()=>{
+document.getElementById("btn").disabled = false;
+},3000);
+</script>
 </a>
 </div>
 
