@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jan Seva Portal</title>
+
+<style>
+body{font-family:Arial;background:#f2f5f9;margin:0}
+
+header{background:#b30000;color:#fff;padding:20px;text-align:center}
+
+nav{background:#111;padding:10px;text-align:center}
+nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:bold}
+
+.container{max-width:1200px;margin:auto;padding:20px}
+
+.section-title{
+background:#0a7cff;
+color:#fff;
+padding:10px;
+border-radius:8px;
+text-align:center;
+margin:20px 0;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.card{
+background:#fff;
+padding:15px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover{background:#e8f2ff}
+
+.btn{
+display:block;
+padding:12px;
+margin:10px 0;
+background:#28a745;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+text-align:center;
+}
+
+.btn-whatsapp{background:#25D366}
+
+.form-box{
+background:#fff;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+}
+
+footer{
+background:#111;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Jan Seva Kendra</h1>
+<p>Govt Jobs | Schemes | Certificates | Online Services</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#jobs">Jobs</a>
+<a href="#schemes">Schemes</a>
+<a href="#certificates">Certificates</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<!-- JOBS -->
+<div class="section-title" id="jobs">Latest Govt Jobs</div>
+<div class="grid">
+<a href="https://ssc.gov.in/" target="_blank" class="card">SSC Jobs</a>
+<a href="https://www.hssc.gov.in/" target="_blank" class="card">HSSC Jobs</a>
+<a href="https://hpsc.gov.in/" target="_blank" class="card">HPSC Jobs</a>
+<a href="https://indianrailways.gov.in/" target="_blank" class="card">Railway Jobs</a>
+<a href="https://www.ibps.in/" target="_blank" class="card">Bank Jobs</a>
+<a href="https://joinindianarmy.nic.in/" target="_blank" class="card">Army Jobs</a>
+<a href="https://www.ncs.gov.in/" target="_blank" class="card">More Govt Jobs</a>
+</div>
+
+<!-- SCHEMES -->
+<div class="section-title" id="schemes">Government Schemes</div>
+<div class="grid">
+
+<div class="card" onclick="openService('PM Kisan','https://pmkisan.gov.in/')">PM Kisan</div>
+
+<div class="card" onclick="openService('Ayushman Bharat','https://beneficiary.nha.gov.in/')">Ayushman Bharat</div>
+
+<div class="card" onclick="openService('PM Awas Yojana','https://pmaymis.gov.in/')">PM Awas</div>
+
+<div class="card" onclick="openService('E-Shram Card','https://eshram.gov.in/')">E-Shram Card</div>
+
+<div class="card" onclick="openService('Old Age Pension','https://edistrict.delhigovt.nic.in/')">Old Age Pension</div>
+
+<div class="card" onclick="openService('Widow Pension','https://edistrict.delhigovt.nic.in/')">Widow Pension</div>
+
+</div>
+
+<!-- CERTIFICATES -->
+<div class="section-title" id="certificates">Certificate Services</div>
+<div class="grid">
+
+<div class="card" onclick="openService('Income Certificate','https://edistrict.delhigovt.nic.in/')">Income Certificate</div>
+
+<div class="card" onclick="openService('Caste Certificate','https://edistrict.delhigovt.nic.in/')">Caste Certificate</div>
+
+<div class="card" onclick="openService('Domicile Certificate','https://edistrict.delhigovt.nic.in/')">Domicile Certificate</div>
+
+<div class="card" onclick="openService('PAN Card','https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html')">PAN Card</div>
+
+<a href="https://crsorgi.gov.in/" target="_blank" class="card">Birth Certificate</a>
+
+<a href="https://voters.eci.gov.in/" target="_blank" class="card">Voter ID</a>
+
+<a href="https://www.passportindia.gov.in/" target="_blank" class="card">Passport</a>
+
+</div>
+
+<!-- FORM -->
+<div class="form-box" id="contact">
+<h2>Quick Apply</h2>
+
+<input type="text" id="name" placeholder="Full Name">
+<input type="tel" id="phone" placeholder="Mobile Number">
+
+<select id="service">
+<option>Select Service</option>
+<option>Income Certificate</option>
+<option>Caste Certificate</option>
+<option>Domicile Certificate</option>
+<option>PAN Card</option>
+<option>Pension</option>
+</select>
+
+<button onclick="sendToWhatsApp()" class="btn">Submit</button>
+
+<a href="upi://pay?pa=9557887780-2@ybl&pn=IRFAN&cu=INR" 
+onclick="setTimeout(()=>{window.open('https://wa.me/919557887780?text=Payment Done, Please Verify','_blank')},3000)" 
+class="btn">💳 Pay via UPI</a>
+
+<a href="https://wa.me/919557887780" target="_blank" class="btn btn-whatsapp">
+💬 WhatsApp Support
+</a>
+
+</div>
+
+</div>
+
+<!-- POPUP -->
+<div id="modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);justify-content:center;align-items:center;">
+<div style="background:#fff;padding:20px;border-radius:10px;text-align:center;width:90%;max-width:400px">
+
+<h3 id="title"></h3>
+<p>Apply via Official Govt Portal or WhatsApp</p>
+
+<a id="official" target="_blank" class="btn">🌐 Official Website</a>
+<a id="whatsapp" target="_blank" class="btn btn-whatsapp">💬 Apply via WhatsApp</a>
+
+<button onclick="closeModal()" class="btn" style="background:red">Close</button>
+
+</div>
+</div>
+
+<script>
+function openService(name,link){
+document.getElementById("modal").style.display="flex";
+document.getElementById("title").innerText=name;
+document.getElementById("official").href=link;
+
+let msg="Hello, mujhe "+name+" ke liye apply karna hai";
+document.getElementById("whatsapp").href="https://wa.me/919557887780?text="+encodeURIComponent(msg);
+}
+
+function closeModal(){
+document.getElementById("modal").style.display="none";
+}
+
+function sendToWhatsApp(){
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let service=document.getElementById("service").value;
+
+let msg=`Name: ${name}%0AMobile: ${phone}%0AService: ${service}`;
+window.open("https://wa.me/919557887780?text="+msg,"_blank");
+}
+</script>
+
+<footer>
+© 2026 Jan Seva Portal | All Rights Reserved
+</footer>
+
+</body>
+</html>
