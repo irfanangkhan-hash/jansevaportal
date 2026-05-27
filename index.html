@@ -288,68 +288,77 @@ table th{
 /* Founder Section */
 
 .founder-section{
-  padding:80px 10%;
-  background:#0b0b0b;
+    padding:80px 8%;
+    background:#0b0b0b;
 }
 
 .founder-card{
-  display:flex;
-  align-items:center;
-  gap:50px;
-  background:#111;
-  border-radius:25px;
-  overflow:hidden;
-  box-shadow:0 15px 40px rgba(0,0,0,0.4);
+    display:flex;
+    align-items:center;
+    gap:50px;
+    background:#111;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
 }
 
 .founder-image{
-  flex:1;
+    flex:1;
 }
 
 .founder-image img{
-  width:100%;
-  height:500px;
-  object-fit:cover;
-  display:block;
+    width:100%;
+    height:550px;
+    object-fit:cover;
+    display:block;
 }
 
 .founder-content{
-  flex:1;
-  color:white;
-  padding:40px;
+    flex:1;
+    color:#fff;
+    padding:40px;
 }
 
 .founder-content h2{
-  font-size:42px;
-  margin-bottom:10px;
+    font-size:42px;
+    margin-bottom:10px;
+    color:#fff;
 }
 
 .founder-content h4{
-  color:#00bfff;
-  margin-bottom:20px;
-  font-size:22px;
+    color:#00bfff;
+    font-size:24px;
+    margin-bottom:20px;
 }
 
 .founder-content p{
-  line-height:1.8;
-  color:#ccc;
-  font-size:17px;
+    font-size:17px;
+    line-height:1.9;
+    color:#d0d0d0;
+    margin-bottom:15px;
 }
 
-/* Responsive */
+/* Mobile Responsive */
 
 @media(max-width:900px){
 
-  .founder-card{
-    flex-direction:column;
-  }
+    .founder-card{
+        flex-direction:column;
+    }
 
-  .founder-image img{
-    height:350px;
-  }
+    .founder-image img{
+        height:400px;
+    }
 
-}   
-</style>
+    .founder-content{
+        padding:25px;
+    }
+
+    .founder-content h2{
+        font-size:32px;
+    }
+
+}
 </head>
 
 <body>
@@ -1605,25 +1614,35 @@ Scholarships
 </div>
 
 </footer>
+<!-- Founder Section Start -->
 
 <section class="founder-section">
 
-<div class="founder-card">
-  <img src="images/md-irfan-founder.jpg" alt="MD Irfan">
-  
-  <h2>MD IRFAN</h2>
-  
-  <p>Founder & Developer</p>
-  
-  <span> IT Professional & Govt. Security System Analyst </span>
-</div>
-<p>
-Md Irfan Khan is the Founder and Developer of Jan Seva Portal, a digital platform dedicated to providing latest government jobs, government schemes, scholarships, admit cards, online forms, and digital public services across India. His vision is to make government information simple, accessible, and user-friendly for every citizen.
-</p>
+  <div class="founder-card">
 
-</div>
+    <div class="founder-image">
+      <img src="./images/md-irfan-founder.jpg" alt="MD Irfan">
+    </div>
 
-</section>      
+    <div class="founder-content">
+
+      <h2>MD IRFAN</h2>
+
+      <h4>Founder & Developer</h4>
+
+      <p>
+        IT Professional & Government Security System Analyst focused on digital infrastructure, cybersecurity awareness, public service technology and secure online systems.
+      </p>
+
+      <p>
+        Md Irfan Khan is the Founder and Developer of Jan Seva Portal, a digital platform dedicated to providing latest government jobs, government schemes, scholarships, admit cards, online forms and digital public services across India.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>   
     
 </body>
 </html>
