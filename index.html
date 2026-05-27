@@ -285,56 +285,70 @@ table th{
 
 }
 
+/* Founder Section */
+
 .founder-section{
-    width:100%;
-    padding:50px 20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#f5f5f5;
+  padding:80px 10%;
+  background:#0b0b0b;
 }
 
 .founder-card{
-    max-width:500px;
-    width:100%;
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-    text-align:center;
-    margin:40px auto;
-    transition:0.3s;
+  display:flex;
+  align-items:center;
+  gap:50px;
+  background:#111;
+  border-radius:25px;
+  overflow:hidden;
+  box-shadow:0 15px 40px rgba(0,0,0,0.4);
 }
 
-.founder-card:hover{
-    transform:translateY(-5px);
+.founder-image{
+  flex:1;
 }
 
-.founder-card h2{
-    margin-top:20px;
-    font-size:30px;
-    color:#111;
+.founder-image img{
+  width:100%;
+  height:500px;
+  object-fit:cover;
+  display:block;
 }
 
-.founder-card h4{
-    color:#ff9800;
-    margin-top:8px;
-    font-size:18px;
+.founder-content{
+  flex:1;
+  color:white;
+  padding:40px;
 }
 
-.founder-card p{
-    padding:20px;
-    color:#555;
-    line-height:1.8;
-    font-size:16px;
+.founder-content h2{
+  font-size:42px;
+  margin-bottom:10px;
 }
 
-.founder-card .founder-img{
-    width:100%;
-    max-height:400px;
-    object-fit:cover;
-    display:block;
-}    
+.founder-content h4{
+  color:#00bfff;
+  margin-bottom:20px;
+  font-size:22px;
+}
+
+.founder-content p{
+  line-height:1.8;
+  color:#ccc;
+  font-size:17px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+  .founder-card{
+    flex-direction:column;
+  }
+
+  .founder-image img{
+    height:350px;
+  }
+
+}   
 </style>
 </head>
 
@@ -1595,13 +1609,14 @@ Scholarships
 <section class="founder-section">
 
 <div class="founder-card">
-
-<img src="TECH.png" alt="Founder Image" class="founder-img">
-
-<h2><u><b>MD IRFAN KHAN</b></u></h2>
-
-<h4><u>Founder & Developer</u></h4>
-
+  <img src="images/md-irfan-founder.jpg" alt="MD Irfan">
+  
+  <h2>MD IRFAN</h2>
+  
+  <p>Founder & Developer</p>
+  
+  <span> IT Professional & Govt. Security System Analyst </span>
+</div>
 <p>
 Md Irfan Khan is the Founder and Developer of Jan Seva Portal, a digital platform dedicated to providing latest government jobs, government schemes, scholarships, admit cards, online forms, and digital public services across India. His vision is to make government information simple, accessible, and user-friendly for every citizen.
 </p>
