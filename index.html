@@ -1,606 +1,1642 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sarkari Setu India</title>
+<title>Jan Seva Portal- Govt Jobs & Schemes</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Latest Government Jobs, Sarkari Result, Govt Schemes, Admit Card, Scholarship and Online Services Portal.">
+
+<meta name="keywords" content="Sarkari Result, Govt Jobs, Jan Seva Portal, Admit Card, Scholarship, PM Yojana">
+
+<meta name="author" content="Jan Seva Portal">
+
+<meta name="robots" content="index, follow">
+
+<meta name="theme-color" content="#0a7cff">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Organization",
+"name":"Jan Seva Portal",
+"url":"https://jansevaportal-flame.vercel.app",
+"logo":"https://jansevaportal-flame.vercel.app/favicon.ico"
+}
+</script>
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 body{
-background:#efefef;
+    background:#f5f5f5;
+    color:#222;
 }
 
-/* HEADER */
 
-.top-header{
-background:#fff;
-padding:18px 20px;
-text-align:center;
+header{
+    background:#0d47a1;
+    color:#fff;
+    padding:15px;
+    text-align:center;
 }
 
-.logo-area{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:15px;
+header h1{
+    font-size:34px;
+    margin-bottom:5px;
 }
 
-.logo-area img{
-width:60px;
+header p{
+    font-size:15px;
 }
 
-.logo-text h1{
-font-size:48px;
-color:#1d49a7;
-font-weight:700;
-line-height:1;
+
+nav{
+    background:#002b6f;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:10px;
 }
 
-.logo-text p{
-font-size:14px;
-color:#444;
+nav a{
+    color:#fff;
+    text-decoration:none;
+    padding:10px 18px;
+    font-size:15px;
+    font-weight:bold;
 }
 
-/* NAVBAR */
-
-.navbar{
-background:#24479c;
-padding:0 20px;
+nav a:hover{
+    background:#1565c0;
+    border-radius:5px;
 }
 
-.nav-container{
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:center;
-align-items:center;
-gap:40px;
-height:65px;
+
+.marquee{
+    background:#fff3cd;
+    padding:10px;
+    font-weight:bold;
+    color:#b00020;
+    border-bottom:1px solid #ddd;
 }
 
-.nav-container a{
-text-decoration:none;
-color:#fff;
-font-weight:500;
-font-size:16px;
-transition:0.3s;
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
 }
 
-.nav-container a:hover{
-color:#ffd54f;
+
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    align-items:flex-start;
+    justify-content:center;
 }
 
-/* HERO */
 
-.hero{
-height:320px;
-background:#ececec;
+.card{
+    background:#fff;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+    overflow:hidden;
+    flex:1 1 300px;
 }
 
-/* SEARCH SECTION */
-
-.search-section{
-max-width:1200px;
-margin:auto;
-margin-top:-60px;
-padding:0 20px;
+.card:hover{
+    transform:translateY(-5px);
 }
 
-.search-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
+.card h2{
+    font-size:20px;
+    margin-bottom:15px;
+    color:#0d47a1;
 }
 
-.search-box{
-background:#fff;
-padding:22px;
-border-radius:15px;
-box-shadow:0 3px 12px rgba(0,0,0,0.1);
-display:flex;
-justify-content:space-between;
-align-items:center;
-cursor:pointer;
-font-size:20px;
-font-weight:500;
+
+.card ul{
+    list-style:none;
 }
 
-.search-box span{
-font-size:22px;
+.card ul li{
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+    font-size:15px;
 }
 
-/* TOOLS */
-
-.tools-section{
-max-width:1200px;
-margin:50px auto;
-padding:0 20px;
+.card ul li a{
+    text-decoration:none;
+    color:#222;
+    display:block;
+    line-height:1.5;
+    overflow-wrap:break-word;
 }
 
-.tools-grid{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:18px;
+.highlight{
+    background:#e3f2fd;
+    padding:15px;
+    border-left:5px solid #0d47a1;
+    margin:20px 0;
 }
 
-.tool-btn{
-background:#3f6fa6;
-color:#fff;
-text-align:center;
-padding:15px 10px;
-border-radius:4px;
-font-size:20px;
-font-weight:500;
-transition:0.3s;
-cursor:pointer;
+
+.section-title{
+    margin:30px 0 15px;
+    font-size:28px;
+    color:#0d47a1;
+    text-align:center;
 }
 
-.tool-btn:hover{
-background:#24479c;
-transform:translateY(-3px);
+
+.table-container{
+    overflow-x:auto;
+    background:#fff;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* MAIN BOXES */
-
-.main-section{
-max-width:1200px;
-margin:50px auto;
-padding:0 20px;
+table{
+    width:100%;
+    border-collapse:collapse;
 }
 
-.main-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
+table th,
+table td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:left;
 }
 
-.main-card{
-border:1px solid #3f6fa6;
-background:#fff;
+table th{
+    background:#0d47a1;
+    color:#fff;
 }
 
-.main-card h2{
-background:#2f73cf;
-color:#fff;
-padding:12px;
-font-size:24px;
-text-align:center;
+
+.footer{
+    background:#002b6f;
+    color:#fff;
+    padding:30px;
+    margin-top:40px;
 }
 
-.main-links{
-padding:8px;
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
-.main-links a{
-display:flex;
-align-items:center;
-gap:12px;
-text-decoration:none;
-color:#444;
-border:1px solid #cfcfcf;
-padding:18px 15px;
-margin-bottom:12px;
-font-size:18px;
-font-weight:500;
-transition:0.3s;
-background:#fafafa;
+.footer h3{
+    margin-bottom:15px;
 }
 
-.main-links a:hover{
-background:#eef4ff;
-padding-left:20px;
-color:#24479c;
+.footer ul{
+    list-style:none;
 }
 
-.check{
-width:24px;
-height:24px;
-background:#2f73cf;
-color:#fff;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:14px;
+.footer ul li{
+    padding:6px 0;
 }
 
-/* LIVE */
-
-.live-box{
-text-align:center;
-margin:40px 0;
+.footer ul li a{
+    color:#fff;
+    text-decoration:none;
 }
 
-.live-box span{
-background:red;
-color:#fff;
-padding:10px 25px;
-font-size:30px;
-font-weight:700;
-border-radius:4px;
-animation:blink 1s infinite;
+.copyright{
+    text-align:center;
+    padding-top:20px;
+    font-size:14px;
 }
 
-@keyframes blink{
-
-0%{
-opacity:1;
+.button{
+    display:inline-block;
+    background:#0d47a1;
+    color:#fff;
+    padding:10px 18px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:10px;
 }
 
-50%{
-opacity:0.4;
-}
-
-100%{
-opacity:1;
-}
+.button:hover{
+    background:#1565c0;
 
 }
 
-/* FOOTER */
-
-footer{
-background:#111827;
-color:#fff;
-padding:50px 20px;
-margin-top:50px;
+.founder-img{
+    width:300px;
+    height:520px;
+    object-fit:cover;
+    border-radius:15px;
+    border:4px solid #0d47a1;
+    box-shadow:0 5px 15px rgba(0,0,0,0.25);
+    display:block;
+    margin:25px auto;
 }
 
-.footer-container{
-max-width:1200px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:40px;
-}
+@media (max-width:768px){
 
-.footer-box h3{
-margin-bottom:20px;
-font-size:24px;
-color:#ffd54f;
-}
+    header h1{
+        font-size:22px;
+    }
 
-.footer-box p{
-line-height:1.8;
-font-size:15px;
-}
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
 
-.footer-box ul{
-list-style:none;
-}
+    .container{
+        width:100%;
+        padding:10px;
+    }
 
-.footer-box ul li{
-margin-bottom:12px;
-}
-
-.footer-box ul li a{
-text-decoration:none;
-color:#fff;
-transition:0.3s;
-}
-
-.footer-box ul li a:hover{
-color:#ffd54f;
-}
-
-/* MOBILE */
-
-.menu-btn{
-display:none;
-}
-
-@media(max-width:992px){
-
-.search-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.tools-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.main-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.footer-container{
-grid-template-columns:1fr;
-}
-
-.logo-text h1{
-font-size:34px;
-}
+    .grid{
+        gap:15px;
+    }
 
 }
 
-@media(max-width:768px){
+/* Founder Section */
 
-.nav-container{
-flex-wrap:wrap;
-gap:20px;
-height:auto;
-padding:15px 0;
+.founder-section{
+    padding:80px 8%;
+    background:#0b0b0b;
 }
 
-.search-grid{
-grid-template-columns:1fr;
+.founder-card{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    background:#111;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
 }
 
-.main-grid{
-grid-template-columns:1fr;
+.founder-image{
+    flex:1;
 }
 
-.tools-grid{
-grid-template-columns:1fr;
+.founder-image img{
+    width:100%;
+    height:550px;
+    object-fit:cover;
+    display:block;
 }
 
-.logo-area{
-flex-direction:column;
+.founder-content{
+    flex:1;
+    color:#fff;
+    padding:40px;
 }
 
-.logo-text h1{
-font-size:28px;
+.founder-content h2{
+    font-size:42px;
+    margin-bottom:10px;
+    color:#fff;
 }
 
-.main-links a{
-font-size:16px;
+.founder-content h4{
+    color:#00bfff;
+    font-size:24px;
+    margin-bottom:20px;
 }
 
-.tool-btn{
-font-size:17px;
+.founder-content p{
+    font-size:17px;
+    line-height:1.9;
+    color:#d0d0d0;
+    margin-bottom:15px;
 }
 
+/* Mobile Responsive */
+
+@media(max-width:900px){
+
+    .founder-card{
+        flex-direction:column;
+    }
+
+    .founder-image img{
+        height:400px;
+    }
+
+    .founder-content{
+        padding:25px;
+    }
+
+    .founder-content h2{
+        font-size:32px;
+    }
+
+}
+.card h2{
+    background:#a0002b;
+    color:#fff;
+    padding:12px;
+    margin:-18px -18px 15px -18px;
+    font-size:24px;
+    text-align:center;
+    border-radius:10px 10px 0 0;
 }
 
+.card ul li a:hover{
+    color:#a0002b;
+    padding-left:5px;
+    transition:0.3s;
+}
+    
 </style>
+    
 </head>
 
 <body>
+    
+</html>
+    
+<header>
+<h1>Jan Seva Portal</h1>
+<p>Latest Govt Jobs, Sarkari Yojana, Results & Online Services</p>
+</header>
 
-<!-- HEADER -->
+<nav>
 
-<div class="top-header">
+<a href="index.html">Home</a>
 
-<div class="logo-area">
+<a href="https://ssc.gov.in" target="_blank">
+Latest Jobs
+</a>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg">
+<a href="https://www.sarkariresult.com" target="_blank">
+Results
+</a>
 
-<div class="logo-text">
-<h1>SARKARI SETU</h1>
-<p>अब सभी सरकारी योजनाएं और सरकारी काम एक ही जगह</p>
+<a href="https://www.sarkariresult.com/admitcard/" target="_blank">
+Admit Card
+</a>
+
+<a href="https://scholarships.gov.in" target="_blank">
+Scholarship
+</a>
+
+<a href="https://www.mygov.in" target="_blank">
+Govt Schemes
+</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="marquee">
+<marquee>
+🔥 Centre Government Schemes | SSC GD Constable Form | Railway Recruitment | PM Internship Scheme | LPG Gas Subsidy Update | Latest Government Jobs | SSC GD Constable Recruitment 2026 | NEET UG | JEE Main | Indian Air Force Recruitment | Metro Rail Recruitment | Railway/Defence Jobs | Religious Tourism | Cyber Security | Ujjwala Yojana | PM Awas Yojana | Ayushman Bharat Scheme | Vaishno Devi Shrine | International Tourism | Domestic Tourism |Cyber Crime Portal
+RBI Banking Safety
+</marquee>
 </div>
 
-</div>
+<div class="container">
 
-</div>
+<div class="highlight">
 
-<!-- NAVBAR -->
-
-<div class="navbar">
-
-<div class="nav-container">
-
-<a href="#">Home</a>
-<a href="#">Latest Jobs</a>
-<a href="#">Last Date</a>
-<a href="#">Application Running</a>
-<a href="#">सरकारी योजना</a>
-<a href="#">सरकारी काम</a>
-<a href="#">Tools</a>
-
-</div>
-
-</div>
-
-<!-- HERO -->
-
-<div class="hero"></div>
-
-<!-- SEARCH SECTION -->
-
-<section class="search-section">
-
-<div class="search-grid">
-
-<div class="search-box">
-State Wise Jobs
-<span>⌄</span>
-</div>
-
-<div class="search-box">
-Qualification Wise
-<span>⌄</span>
-</div>
-
-<div class="search-box">
-➤ सरकारी योजना
-</div>
-
-<div class="search-box">
-➤ सरकारी काम
-</div>
-
-</div>
-
-</section>
-
-<!-- TOOLS -->
-
-<section class="tools-section">
-
-<div class="tools-grid">
-
-<div class="tool-btn">Signature Resizer</div>
-<div class="tool-btn">Image Resizer</div>
-<div class="tool-btn">Image to PDF</div>
-<div class="tool-btn">Add Name & Date</div>
-<div class="tool-btn">Photo Sign Joiner</div>
-
-<div class="tool-btn">Age Calculator</div>
-<div class="tool-btn">PNG to JPG</div>
-<div class="tool-btn">20kb Photo</div>
-<div class="tool-btn">50kb Photo</div>
-<div class="tool-btn">Photo in KB</div>
-
-</div>
-
-</section>
-
-<div class="live-box">
-<span>LIVE NOW</span>
-</div>
-
-<!-- MAIN SECTION -->
-
-<section class="main-section">
-
-<div class="main-grid">
-
-<!-- CARD 1 -->
-
-<div class="main-card">
-
-<h2>नया लिंक</h2>
-
-<div class="main-links">
-
-<a href="#"><div class="check">✔</div> न्यू वोटर लिस्ट 2026</a>
-
-<a href="#"><div class="check">✔</div> जनगणना 2026-27 खुद से करें</a>
-
-<a href="#"><div class="check">✔</div> Farmer Registry</a>
-
-<a href="#"><div class="check">✔</div> वोटर आईडी कार्ड</a>
-
-<a href="#"><div class="check">✔</div> आधार लिंक NPCI</a>
-
-<a href="#"><div class="check">✔</div> UPI Payment Complaint</a>
-
-</div>
-
-</div>
-
-<!-- CARD 2 -->
-
-<div class="main-card">
-
-<h2>चुनाव</h2>
-
-<div class="main-links">
-
-<a href="#"><div class="check">✔</div> बिहार चुनाव 2026</a>
-
-<a href="#"><div class="check">✔</div> ग्राम पंचायत चुनाव</a>
-
-<a href="#"><div class="check">✔</div> यूपी चुनाव 2021</a>
-
-<a href="#"><div class="check">✔</div> राजस्थान पंचायत चुनाव</a>
-
-<a href="#"><div class="check">✔</div> वोटर लिस्ट PDF</a>
-
-<a href="#"><div class="check">✔</div> बूथ जानकारी</a>
-
-</div>
-
-</div>
-
-<!-- CARD 3 -->
-
-<div class="main-card">
-
-<h2>सरकारी काम</h2>
-
-<div class="main-links">
-
-<a href="#"><div class="check">✔</div> Farmer ID</a>
-
-<a href="#"><div class="check">✔</div> आधार कार्ड</a>
-
-<a href="#"><div class="check">✔</div> पैन कार्ड</a>
-
-<a href="#"><div class="check">✔</div> राशन कार्ड</a>
-
-<a href="#"><div class="check">✔</div> गैस सब्सिडी</a>
-
-<a href="#"><div class="check">✔</div> ई-श्रम कार्ड</a>
-
-</div>
-
-</div>
-
-<!-- CARD 4 -->
-
-<div class="main-card">
-
-<h2>सरकारी योजना</h2>
-
-<div class="main-links">
-
-<a href="#"><div class="check">✔</div> किसान योजना</a>
-
-<a href="#"><div class="check">✔</div> पीएम योजना</a>
-
-<a href="#"><div class="check">✔</div> महिला योजना</a>
-
-<a href="#"><div class="check">✔</div> बेटी योजना</a>
-
-<a href="#"><div class="check">✔</div> गरीब योजना</a>
-
-<a href="#"><div class="check">✔</div> युवाओं के लिए योजना</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-<div class="footer-container">
-
-<div class="footer-box">
-
-<h3>Sarkari Setu</h3>
+<h2>Welcome to Jan Seva Portal</h2>
 
 <p>
-भारत की सभी सरकारी योजनाएं, सरकारी काम, नौकरी, रिजल्ट और ऑनलाइन सेवाएं एक ही प्लेटफॉर्म पर।
+Jan Seva Portal provides the latest government job notifications, results, admit cards, government schemes, scholarships and online application updates across India.
 </p>
+
+<a href="https://www.ncs.gov.in"
+target="_blank"
+class="button">
+Apply Online
+</a>
 
 </div>
 
-<div class="footer-box">
+<h2 class="section-title">Latest Government Jobs</h2>
 
-<h3>Quick Links</h3>
+<div class="grid">
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-briefcase"></i>
+SSC Jobs
+</h2>
 
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Latest Jobs</a></li>
-<li><a href="#">Admit Card</a></li>
-<li><a href="#">Result</a></li>
-<li><a href="#">Contact</a></li>
+
+<li>
+<a href="https://ssc.gov.in" target="_blank">
+SSC GD Constable Recruitment 2026
+</a>
+</li>
+
+<li>
+<a href="https://ssc.gov.in" target="_blank">
+SSC CHSL Online Form
+</a>
+</li>
+
+<li>
+<a href="https://ssc.gov.in" target="_blank">
+SSC MTS Notification
+</a>
+</li>
+
+<li>
+<a href="https://ssc.gov.in" target="_blank">
+SSC CGL Vacancy
+</a>
+</li>
+
+<li>
+<a href="https://rect.crpf.gov.in" target="_blank">
+CRPF Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://recruitment.itbpolice.nic.in" target="_blank">
+ITBP Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://cisfrectt.cisf.gov.in" target="_blank">
+CISF Recruitment
+</a>
+</li>   
+
+<li>
+<a href="https://www.joinindiannavy.gov.in" target="_blank">
+Indian Navy Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://joinindianarmy.nic.in" target="_blank">
+Indian Army Rally Bharti
+</a>
+</li>  
+
+</ul>
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-book"></i>
+Education & Exams
+</h2>
+
+<ul>
+
+<li>
+<a href="https://nta.ac.in" target="_blank">
+NTA Exams Portal
+</a>
+</li>
+
+<li>
+<a href="https://jeemain.nta.nic.in" target="_blank">
+JEE Main
+</a>
+</li>
+
+<li>
+<a href="https://neet.nta.nic.in" target="_blank">
+NEET UG
+</a>
+</li>
+
+<li>
+<a href="https://www.cbse.gov.in" target="_blank">
+CBSE Board
+</a>
+</li>
+
+<li>
+<a href="https://bseh.org.in" target="_blank">
+HBSE Haryana Board
+</a>
+</li>
+
+<li>
+<a href="https://ugcnet.nta.nic.in" target="_blank">
+UGC NET Exam
+</a>
+</li>
+
+<li>
+<a href="https://www.aicte-india.org" target="_blank">
+AICTE Portal
+</a>
+</li>
+
+<li>
+<a href="https://www.nios.ac.in" target="_blank">
+NIOS Admission Online Form
+</a>
+</li>
+
+<li>
+<a href="https://www.ignou.ac.in" target="_blank">
+IGNOU Admission 2026
+</a>
+</li>   
+    
+</ul>
+    
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-train"></i>
+Railway/Defence Jobs
+</h2>
+
+<ul>
+
+<li>
+<a href="https://indianrailways.gov.in" target="_blank">
+RRB NTPC Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://indianrailways.gov.in" target="_blank">
+Railway Group D Vacancy
+</a>
+</li>
+
+<li>
+<a href="https://indianrailways.gov.in" target="_blank">
+Railway Apprentice Form
+</a>
+</li>
+
+<li>
+<a href="https://mtp.indianrailways.gov.in" target="_blank">
+Metro Rail Recruitment
+</a>
+</li>
+
+</ul>
+
+<ul>
+
+<li>
+<a href="https://careerindianairforce.cdac.in" target="_blank">
+Indian Air Force Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://bsf.gov.in" target="_blank">
+BSF Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://www.ssbrectt.gov.in" target="_blank">
+SSB Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://ssc.nic.in" target="_blank">
+SSC Delhi Police Constable
+</a>
+</li>
+
+<li>
+<a href="https://www.nia.gov.in" target="_blank">
+NIA Recruitment
+</a>
+</li>
+
+</ul>
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-graduation-cap"></i>
+Scholarship Portals
+</h2>
+
+<ul>
+
+<li>
+<a href="https://scholarships.gov.in" target="_blank">
+National Scholarship Portal
+</a>
+</li>
+
+<li>
+<a href="https://harchhatravratti.highereduhry.ac.in" target="_blank">
+Haryana Scholarship
+</a>
+</li>
+
+<li>
+<a href="https://www.aicte-india.org/schemes/students-development-schemes" target="_blank">
+AICTE Scholarships
+</a>
+</li>
+
+<li>
+<a href="https://buddy4study.com" target="_blank">
+Buddy4Study Scholarships
+</a>
+</li>
+
+<li>
+<a href="https://www.vidyalakshmi.co.in" target="_blank">
+Vidya Lakshmi Portal
+</a>
+</li>
+
+<li>
+<a href="https://www.minorityaffairs.gov.in" target="_blank">
+Minority Scholarships
+</a>
+</li>
+
+<li>
+<a href="https://socialjustice.gov.in" target="_blank">
+SC/ST Scholarship Schemes
+</a>
+</li>
+
+<li>
+<a href="https://www.education.gov.in" target="_blank">
+Education Ministry Schemes
+</a>
+</li>
+
+<li>
+<a href="https://www.ugc.ac.in" target="_blank">
+UGC Fellowships
+</a>
+</li>
+
+</ul>
+    
+</div>
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-building-columns"></i>
+Banking Jobs & Services
+</h2>
+
+<ul>
+
+<li>
+<a href="https://sbi.co.in" target="_blank">
+SBI Clerk Online Form
+</a>
+</li>
+
+<li>
+<a href="https://www.ibps.in" target="_blank">
+IBPS PO Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://rbi.org.in" target="_blank">
+RBI Assistant Vacancy
+</a>
+</li>
+
+<li>
+<a href="https://www.hdfcbank.com" target="_blank">
+HDFC Careers
+</a>
+</li>
+
+<li>
+<a href="https://sbi.co.in" target="_blank">
+State Bank of India (SBI)
+</a>
+</li>
+
+<li>
+<a href="https://www.pnbindia.in" target="_blank">
+Punjab National Bank (PNB)
+</a>
+</li>
+
+<li>
+<a href="https://www.bankofbaroda.in" target="_blank">
+Bank of Baroda
+</a>
+</li>
+
+<li>
+<a href="https://canarabank.com" target="_blank">
+Canara Bank
+</a>
+</li>
+
+<li>
+<a href="https://www.unionbankofindia.co.in" target="_blank">
+Union Bank of India
+</a>
+</li>
+
+<li>
+<a href="https://www.bankofindia.co.in" target="_blank">
+Bank of India
+</a>
+</li>
+
+<li>
+<a href="https://www.centralbankofindia.co.in" target="_blank">
+Central Bank of India
+</a>
+</li>
+
+<li>
+<a href="https://www.indianbank.in" target="_blank">
+Indian Bank
+</a>
+</li>
+
+<li>
+<a href="https://www.iob.in" target="_blank">
+Indian Overseas Bank
+</a>
+</li>
+
+<li>
+<a href="https://www.ucobank.com" target="_blank">
+UCO Bank
+</a>
+</li>
+
+<li>
+<a href="https://www.axisbank.com" target="_blank">
+Axis Bank
+</a>
+</li>
+
+<li>
+<a href="https://www.icicibank.com" target="_blank">
+ICICI Bank
+</a>
+</li>
+
+<li>
+<a href="https://www.hdfcbank.com" target="_blank">
+HDFC Bank
+</a>
+</li>
+
+<li>
+<a href="https://www.kotak.com" target="_blank">
+Kotak Mahindra Bank
+</a>
+</li>
+
+<li>
+<a href="https://www.idbibank.in" target="_blank">
+IDBI Bank
+</a>
+</li>
+
+<li>
+<a href="https://www.yesbank.in" target="_blank">
+Yes Bank
+</a>
+</li>
+
+<li>
+<a href="https://www.indusind.com" target="_blank">
+IndusInd Bank
+</a>
+</li>
+
+<li>
+<a href="https://www.rbi.org.in" target="_blank">
+Reserve Bank of India (RBI)
+</a>
+</li>
+
+<li>
+<a href="https://www.nabard.org" target="_blank">
+NABARD
+</a>
+</li>
+
+<li>
+<a href="https://www.ibps.in" target="_blank">
+IBPS Recruitment
+</a>
+</li>
+
+</ul>
+
+</div>
+           
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-shield-halved"></i>
+Centre Government Schemes
+</h2>
+  
+<ul>
+
+<li>
+<a href="https://pmkisan.gov.in" target="_blank">
+PM Kisan Yojana
+</a>
+</li>
+
+<li>
+<a href="https://pmaymis.gov.in" target="_blank">
+PM Awas Yojana
+</a>
+</li>
+
+<li>
+<a href="https://pmjay.gov.in" target="_blank">
+Ayushman Bharat Scheme
+</a>
+</li>
+
+<li>
+<a href="https://www.pmuy.gov.in" target="_blank">
+Ujjwala Yojana
+</a>
+</li>
+
+<li>
+<a href="https://nrega.nic.in" target="_blank">
+MGNREGA Job Card
+</a>
+</li>
+
+<li>
+<a href="https://scholarships.gov.in" target="_blank">
+National Scholarship Portal
+</a>
+</li>
+
+<li>
+<a href="https://labour.gov.in" target="_blank">
+Labour Card Registration
+</a>
+</li>
+
+<li>
+<a href="https://uidai.gov.in" target="_blank">
+Aadhaar Services
+</a>
+</li>
+
+<li>
+<a href="https://nfsa.gov.in" target="_blank">
+Ration Card Services
+</a>
+</li>
+
+<li>
+<a href="https://standupmitra.in" target="_blank">
+Stand Up India Scheme
+</a>
+</li>
+
+<li>
+<a href="https://mudra.org.in" target="_blank">
+PM Mudra Loan Yojana
+</a>
+</li>
+
+<li>
+<a href="https://digitalindia.gov.in" target="_blank">
+Digital India Mission
+</a>
+</li>
+
+<li>
+<a href="https://skillindia.gov.in" target="_blank">
+Skill India Program
+</a>
+</li>
+
+<li>
+<a href="https://www.startupindia.gov.in" target="_blank">
+Startup India Scheme
+</a>
+</li>
+
+<li>
+<a href="https://www.india.gov.in" target="_blank">
+Senior Citizen Pension Scheme
+</a>
+</li>
+
+</ul>   
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-map-location-dot"></i>
+State Govt Jobs
+</h2>
+
+<ul>
+
+<li>
+<a href="https://hssc.gov.in" target="_blank">
+HSSC Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://www.hpsc.gov.in" target="_blank">
+Haryana PSC
+</a>
+</li>
+
+<li>
+<a href="https://uppsc.up.nic.in" target="_blank">
+UPPSC Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://rpsc.rajasthan.gov.in" target="_blank">
+Rajasthan PSC
+</a>
+</li>
+
+<li>
+<a href="https://mpsc.gov.in" target="_blank">
+Maharashtra PSC
+</a>
+</li>
+
+<li>
+<a href="https://www.psc.cg.gov.in" target="_blank">
+Chhattisgarh PSC
+</a>
+</li>
+
+<li>
+<a href="https://www.opsc.gov.in" target="_blank">
+Odisha PSC
+</a>
+</li>
+
+<li>
+<a href="https://gpsc.gujarat.gov.in" target="_blank">
+Gujarat PSC
+</a>
+</li>
+
+<li>
+<a href="https://www.tnpsc.gov.in" target="_blank">
+TNPSC Recruitment
+</a>
+</li>
+    
+<li>
+<a href="https://www.jpsc.gov.in" target="_blank">
+Jharkhand PSC
+</a>
+</li>
+
+<li>
+<a href="https://psc.ap.gov.in" target="_blank">
+Andhra Pradesh PSC
+</a>
+</li>
+
+<li>
+<a href="https://mppsc.mp.gov.in" target="_blank">
+MPPSC Recruitment
+</a>
+</li>
+    
+</ul>
+
+</div>    
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-shield-halved"></i>
+Police Recruitment
+</h2>
+
+<ul>
+
+<li>
+<a href="https://uppbpb.gov.in" target="_blank">
+UP Police Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://haryanapolice.gov.in" target="_blank">
+Haryana Police Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://ksp.karnataka.gov.in" target="_blank">
+Karnataka Police Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://police.rajasthan.gov.in" target="_blank">
+Rajasthan Police Recruitment
+</a>
+</li>
+
+ <li>
+<a href="https://jkpolice.gov.in" target="_blank">
+J&K Police Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://tslprb.in" target="_blank">
+Telangana Police Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://slprbassam.in" target="_blank">
+Assam Police Recruitment
+</a>
+</li>
+    
+<li>
+<a href="https://www.delhipolice.gov.in" target="_blank">
+Delhi Police Vacancy
+</a>
+</li>
+
+<li>
+<a href="https://punjabpolice.gov.in" target="_blank">
+Punjab Police Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://www.mahapolice.gov.in" target="_blank">
+Maharashtra Police Bharti
+</a>
+</li>
+
+<li>
+<a href="https://www.tnusrb.tn.gov.in" target="_blank">
+Tamil Nadu Police Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://odishapolice.gov.in" target="_blank">
+Odisha Police Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://www.csbc.bih.nic.in" target="_blank">
+Bihar Police Constable Form
+</a>
+</li>
+
+<li>
+<a href="https://esb.mp.gov.in" target="_blank">
+MP Police Recruitment
+</a>
+</li>
+
+<li>
+<a href="https://wbpolice.gov.in" target="_blank">
+West Bengal Police Recruitment
+</a>
+</li>
+
 </ul>
 
 </div>
 
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-shield-halved"></i>
+Cyber Security
+</h2>
+
+<ul>
+
+<li>
+<a href="https://cybercrime.gov.in" target="_blank">
+Cyber Crime Portal
+</a>
+</li>
+
+<li>
+<a href="https://www.cert-in.org.in" target="_blank">
+CERT-IN Security
+</a>
+</li>
+
+<li>
+<a href="https://digitalpolice.gov.in" target="_blank">
+Digital Police Portal
+</a>
+</li>
+
+<li>
+<a href="https://www.consumerhelpline.gov.in" target="_blank">
+Consumer Helpline
+</a>
+</li>
+
+<li>
+<a href="https://pgportal.gov.in" target="_blank">
+Public Grievance Portal
+</a>
+</li>
+
+<li>
+<a href="https://www.rbi.org.in" target="_blank">
+RBI Banking Safety
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-map-location-dot"></i>
+Domestic Tourism
+</h2>
+
+<ul>
+
+<li>
+<a href="https://www.incredibleindia.gov.in" target="_blank">
+Incredible India Tourism
+</a>
+</li>
+
+<li>
+<a href="https://www.irctctourism.com" target="_blank">
+IRCTC Tourism
+</a>
+</li>
+
+<li>
+<a href="https://tourism.gov.in" target="_blank">
+India Tourism Ministry
+</a>
+</li>
+
+<li>
+<a href="https://haryanatourism.gov.in" target="_blank">
+Haryana Tourism
+</a>
+</li>
+
+<li>
+<a href="https://www.uptourism.gov.in" target="_blank">
+UP Tourism
+</a>
+</li>
+
+<li>
+<a href="https://www.keralatourism.org" target="_blank">
+Kerala Tourism
+</a>
+</li>
+
+<li>
+<a href="https://goa-tourism.com" target="_blank">
+Goa Tourism
+</a>
+</li>
+
+<li>
+<a href="https://www.gujarattourism.com" target="_blank">
+Gujarat Tourism
+</a>
+</li>
+
+<li>
+<a href="https://himachaltourism.gov.in" target="_blank">
+Himachal Tourism
+</a>
+</li>
+
+</ul>
+
+</div>    
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-earth-americas"></i>
+International Tourism
+</h2>
+
+<ul>
+
+<li>
+<a href="https://www.booking.com" target="_blank">
+Booking.com Hotels
+</a>
+</li>
+
+<li>
+<a href="https://www.airbnb.com" target="_blank">
+Airbnb Stays
+</a>
+</li>
+
+<li>
+<a href="https://www.tripadvisor.in" target="_blank">
+TripAdvisor Travel
+</a>
+</li>
+
+<li>
+<a href="https://www.skyscanner.co.in" target="_blank">
+Skyscanner Flights
+</a>
+</li>
+
+<li>
+<a href="https://www.makemytrip.com" target="_blank">
+MakeMyTrip International
+</a>
+</li>
+
+<li>
+<a href="https://www.agoda.com" target="_blank">
+Agoda Hotels
+</a>
+</li>
+
+<li>
+<a href="https://www.expedia.com" target="_blank">
+Expedia Travel
+</a>
+</li>
+
+<li>
+<a href="https://www.kayak.com" target="_blank">
+KAYAK Travel Search
+</a>
+</li>
+
+<li>
+<a href="https://www.visitsaudi.com" target="_blank">
+Saudi Arabia Tourism
+</a>
+</li>
+
+<li>
+<a href="https://www.visitsingapore.com" target="_blank">
+Singapore Tourism
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-place-of-worship"></i>
+Religious Tourism
+</h2>
+
+<ul>
+
+<li>
+<a href="https://www.maavaishnodevi.org" target="_blank">
+Vaishno Devi Shrine
+</a>
+</li>
+
+<li>
+<a href="https://www.tirumala.org" target="_blank">
+Tirupati Balaji Temple
+</a>
+</li>
+
+<li>
+<a href="https://www.shrikashivishwanath.org" target="_blank">
+Kashi Vishwanath Temple
+</a>
+</li>
+
+<li>
+<a href="https://www.goldentempleamritsar.org" target="_blank">
+Golden Temple Amritsar
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-mountain-sun"></i>
+Adventure Tourism
+</h2>
+
+<ul>
+
+<li>
+<a href="https://www.thrillophilia.com" target="_blank">
+Thrillophilia Adventures
+</a>
+</li>
+
+<li>
+<a href="https://www.indiahikes.com" target="_blank">
+IndiaHikes Trekking
+</a>
+</li>
+
+<li>
+<a href="https://www.bikatadventures.com" target="_blank">
+Bikat Adventures
+</a>
+</li>
+
+<li>
+<a href="https://www.nomadicweekends.com" target="_blank">
+Nomadic Weekends
+</a>
+</li>
+
+<li>
+<a href="https://www.ramblersindia.com" target="_blank">
+Ramblers India
+</a>
+</li>
+
+<li>
+<a href="https://www.holidify.com" target="_blank">
+Holidify Adventure Trips
+</a>
+</li>
+
+<li>
+<a href="https://www.easemytrip.com" target="_blank">
+EasyMyTrip Tours
+</a>
+</li>
+
+<li>
+<a href="https://www.yhaindia.org" target="_blank">
+Youth Hostels India
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-passport"></i>
+Visa & International Travel
+</h2>
+
+<ul>
+
+<li>
+<a href="https://www.passportindia.gov.in" target="_blank">
+Passport India
+</a>
+</li>
+
+<li>
+<a href="https://indianvisaonline.gov.in" target="_blank">
+Indian Visa Services
+</a>
+</li>
+
+<li>
+<a href="https://www.emirates.com" target="_blank">
+Emirates Airlines
+</a>
+</li>
+
+<li>
+<a href="https://www.qatarairways.com" target="_blank">
+Qatar Airways
+</a>
+</li>
+
+<li>
+<a href="https://www.airindia.com" target="_blank">
+Air India
+</a>
+</li>
+
+<li>
+<a href="https://www.visa.vfsglobal.com" target="_blank">
+Global Visa Appointments
+</a>
+</li>
+
+<li>
+<a href="https://www.iatatravelcentre.com" target="_blank">
+IATA Travel Centre
+</a>
+</li>
+
+</ul>
+
+</div>
+    
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-id-card"></i>
+Citizen Services
+</h2>
+
+<ul>
+
+<li>
+<a href="https://parivahan.gov.in" target="_blank">
+Driving License Services
+</a>
+</li>
+
+<li>
+<a href="https://www.incometax.gov.in" target="_blank">
+PAN Card Services
+</a>
+</li>
+
+<li>
+<a href="https://digitallocker.gov.in" target="_blank">
+DigiLocker Services
+</a>
+</li>
+
+<li>
+<a href="https://epfindia.gov.in" target="_blank">
+EPFO PF Services
+</a>
+</li>
+
+<li>
+<a href="https://esic.gov.in" target="_blank">
+ESIC Services
+</a>
+</li>
+
+<li>
+<a href="https://www.nvsp.in" target="_blank">
+Election Services
+</a>
+</li>
+    
+</ul>
+</div>
+    
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-fire"></i>
+LPG Gas Services
+</h2>
+
+<ul>
+
+<li>
+<a href="https://www.pmuy.gov.in" target="_blank">
+PM Ujjwala Yojana
+</a>
+</li>
+
+<li>
+<a href="https://cx.indianoil.in" target="_blank">
+Indane Gas Services
+</a>
+</li>
+
+<li>
+<a href="https://my.ebharatgas.com" target="_blank">
+Bharat Gas Services
+</a>
+</li>
+
+<li>
+<a href="https://myhpgas.in" target="_blank">
+HP Gas Services
+</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+
+<footer class="footer">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>About Portal</h3>
+
+<p>
+Jan Seva Portal is an online platform providing latest government jobs, results, schemes, scholarships and online services updates.
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li>
+<a href="https://ssc.gov.in" target="_blank">
+Latest Jobs
+</a>
+</li>
+
+<li>
+<a href="https://www.sarkariresult.com" target="_blank">
+Results
+</a>
+</li>
+
+<li>
+<a href="https://scholarships.gov.in" target="_blank">
+Scholarships
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div>
+
 <div id="contact">
 <h3>Contact</h3>
 <ul>    
-<li>Email: irfanangkhan@gmail.com</li>
+<li>Email: jansevaportal@zohomail.in</li>
+<li>Alternate Email: irfanangkhan@gmail.com</li>
 <li>Phone: +91 9557887780</li>
 <li>India</li>
 </ul>
@@ -612,8 +1648,6 @@ Qualification Wise
 <div class="copyright">
 © 2026 Jan Seva Portal. All Rights Reserved.
 </div>
-
-</footer>
     
 <!-- Founder Section Start -->
 
@@ -642,7 +1676,9 @@ Qualification Wise
     </div>
 
   </div>
-
+    
+</footer>
+    
 </section>   
     
 </body>
