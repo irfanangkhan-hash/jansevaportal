@@ -374,6 +374,23 @@ table th{
     padding-left:5px;
     transition:0.3s;
 }
+
+.whatsapp-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+z-index:999;
+}    
     
 </style>
     
@@ -386,7 +403,13 @@ table th{
     
 <header>
 <h1>Jan Seva Portal</h1>
-<p>Latest Govt Jobs, Sarkari Yojana, Results & Online Services</p>
+
+<p>
+Latest Govt Jobs, Sarkari Yojana, Results & Online Services
+</p>
+
+<div id="clock"></div>
+
 </header>
 
 <nav>
@@ -416,6 +439,12 @@ Govt Schemes
 
 </nav>
 
+<div style="text-align:center;padding:15px;background:#fff;">
+<input type="text"
+placeholder="🔍 Search Jobs, Schemes, Results..."
+style="width:80%;max-width:500px;padding:12px;border:2px solid #0d47a1;border-radius:5px;">
+</div>
+
 <div class="marquee">
 <marquee>
 🔥 Centre Government Schemes | SSC GD Constable Form | Railway Recruitment | PM Internship Scheme | LPG Gas Subsidy Update | Latest Government Jobs | SSC GD Constable Recruitment 2026 | NEET UG | JEE Main | Indian Air Force Recruitment | Metro Rail Recruitment | Railway/Defence Jobs | Religious Tourism | Cyber Security | Ujjwala Yojana | PM Awas Yojana | Ayushman Bharat Scheme | Vaishno Devi Shrine | International Tourism | Domestic Tourism |Cyber Crime Portal
@@ -426,7 +455,18 @@ RBI Banking Safety
 <div class="container">
 
 <div class="highlight">
+    
+<div style="background:#0d47a1;color:white;padding:50px;text-align:center;">
 
+<h1>
+India's Trusted Government Services Portal
+</h1>
+
+<p>
+Jobs | Schemes | Scholarships | Results
+</p>
+
+</div>
 <h2>Welcome to Jan Seva Portal</h2>
 
 <p>
@@ -1587,7 +1627,29 @@ HP Gas Services
 </ul>
 
 </div>
+    
+<h2 class="section-title">
+Emergency Helpline
+</h2>
 
+<div class="card">
+
+<ul>
+
+<li>🚓 Police - 112</li>
+
+<li>🚑 Ambulance - 108</li>
+
+<li>👩 Women Helpline - 1091</li>
+
+<li>💻 Cyber Crime - 1930</li>
+
+<li>👶 Child Helpline - 1098</li>
+
+</ul>
+
+</div>
+    
 <footer class="footer">
 
 <div class="footer-grid">
@@ -1640,9 +1702,15 @@ Scholarships
 </div>
 
 <div class="copyright">
-© 2026 Jan Seva Portal. All Rights Reserved.
-</div>
 
+👁 Visitors: 20,500+
+
+<br><br>
+
+© 2026 Jan Seva Portal. All Rights Reserved.
+
+</div>   
+    
 </footer>
  
 <!-- Founder Section Start -->
@@ -1675,6 +1743,18 @@ Scholarships
 
 </section>   
     
+<script>
+setInterval(function(){
+document.getElementById("clock").innerHTML =
+new Date().toLocaleString();
+},1000);
+</script>    
+
+<a href="https://wa.me/919557887780"
+class="whatsapp-btn"
+target="_blank">
+💬
+ 
 </body>
 </html>
 
