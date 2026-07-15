@@ -548,6 +548,7 @@ transition:.3s;
 background:#0056b3;
 transform:translateY(-2px);
 }
+
 /* ================= WEBSITE DEVELOPMENT ================= */
 
 .website-dev{
@@ -762,8 +763,27 @@ grid-template-columns:1fr;
 
 font-size:32px;
 
+}    
+
+ .business-wrapper{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+max-width:1600px;
+
+margin:auto;
+
+padding:80px 20px;
+
+align-items:start;
+
 }
-    .why-choose{
+
+  .why-choose{
 
 padding:70px 20px;
 
@@ -807,9 +827,9 @@ transform:translateY(-8px);
 /* ===============================
    Business Statistics
 ================================= */
-
+   
 .business-stats {
-    padding: 80px 20px;
+    padding: 0px;
     background: #f8fbff;
     text-align: center;
 }
@@ -827,9 +847,9 @@ transform:translateY(-8px);
 }
 
 .stats-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    gap: 20px;
     max-width: 1200px;
     margin: auto;
 }
@@ -858,21 +878,40 @@ transform:translateY(-8px);
     color: #555;
 }
 
+@media(max-width:1200px){
+
+.business-wrapper{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.business-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+}    
 /* ===============================
    Pricing Card
 ================================= */
 
 .pricing {
-    padding: 80px 20px;
-    background: #eef6ff;
-    display: flex;
+    padding: 0px;
+    background: none;
+    display: block;
     justify-content: center;
 }
 
 .price-card {
     background: #fff;
     width: 100%;
-    max-width: 420px;
+    max-width: 380px;
     padding: 40px;
     border-radius: 25px;
     text-align: center;
@@ -927,15 +966,15 @@ transform:translateY(-8px);
 ================================= */
 
 .trust-section {
-    padding: 80px 20px;
+    padding: 0px 0px;
     background: #fff;
     text-align: center;
 }
 
 .trust-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
+    gap: 20px;
     max-width: 1200px;
     margin: auto;
 }
