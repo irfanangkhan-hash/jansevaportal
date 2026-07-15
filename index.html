@@ -549,202 +549,122 @@ background:#0056b3;
 transform:translateY(-2px);
 }
 
-/* ================= WEBSITE DEVELOPMENT ================= */
+/* ===============================
+   WEBSITE DEVELOPMENT
+================================= */
 
 .website-dev{
-
-padding:80px 20px;
-
-background:linear-gradient(135deg,#0f172a,#1d4ed8);
-
-color:white;
-
+    padding:80px 20px;
+    background:linear-gradient(135deg,#0f172a,#1d4ed8);
+    color:#fff;
 }
 
 .website-container{
-
-max-width:1300px;
-
-margin:auto;
-
-display:grid;
-
-grid-template-columns:1fr 420px;
-
-gap:50px;
-
-align-items:center;
-
+    max-width:1300px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 420px;
+    gap:50px;
+    align-items:center;
 }
 
 .badge{
-
-display:inline-block;
-
-background:#FFD700;
-
-color:#000;
-
-padding:8px 18px;
-
-border-radius:50px;
-
-font-weight:bold;
-
-margin-bottom:20px;
-
+    display:inline-block;
+    background:#FFD700;
+    color:#000;
+    padding:8px 18px;
+    border-radius:50px;
+    font-weight:700;
+    margin-bottom:20px;
 }
 
 .website-left h2{
-
-font-size:42px;
-
-margin-bottom:20px;
-
-line-height:1.3;
-
+    font-size:42px;
+    line-height:1.3;
+    margin-bottom:20px;
 }
 
 .website-left p{
-
-font-size:18px;
-
-color:#d9e6ff;
-
-line-height:1.8;
-
-margin-bottom:30px;
-
+    font-size:18px;
+    color:#d9e6ff;
+    line-height:1.8;
+    margin-bottom:30px;
 }
 
 .feature-list{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:15px;
-
-margin-bottom:35px;
-
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-bottom:35px;
 }
 
 .feature-list div{
-
-background:rgba(255,255,255,.08);
-
-padding:12px;
-
-border-radius:10px;
-
+    background:rgba(255,255,255,.08);
+    padding:14px;
+    border-radius:10px;
 }
 
 .website-right{
-
-background:white;
-
-color:#222;
-
-padding:35px;
-
-border-radius:20px;
-
-box-shadow:0 15px 40px rgba(0,0,0,.25);
-
+    background:#fff;
+    color:#222;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
 }
 
 .website-right h3{
-
-text-align:center;
-
-font-size:30px;
-
-margin-bottom:25px;
-
-color:#0d6efd;
-
+    text-align:center;
+    color:#0d6efd;
+    font-size:30px;
+    margin-bottom:25px;
 }
 
 .website-right ul{
-
-list-style:none;
-
-padding:0;
-
-margin:0;
-
+    list-style:none;
+    padding:0;
+    margin:0;
 }
 
 .website-right li{
-
-padding:12px;
-
-border-bottom:1px solid #eee;
-
-font-weight:600;
-
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+    font-weight:600;
 }
 
 .buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
 
-margin-top:30px;
-
-display:flex;
-
-gap:20px;
-
-flex-wrap:wrap;
-
+.call-btn,
+.whatsapp-btn{
+    padding:14px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
 }
 
 .call-btn{
-
-background:#FFD700;
-
-color:#000;
-
-padding:14px 35px;
-
-border-radius:50px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-transition:.3s;
-
+    background:#FFD700;
+    color:#000;
 }
 
 .call-btn:hover{
-
-background:#fff;
-
+    background:#fff;
 }
 
 .whatsapp-btn{
-
-background:#25D366;
-
-color:white;
-
-padding:14px 35px;
-
-border-radius:50px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-transition:.3s;
-
+    background:#25D366;
+    color:#fff;
 }
 
 .whatsapp-btn:hover{
-
-background:#128C7E;
-
+    background:#128C7E;
 }
-
+    
 @media(max-width:900px){
 
 .website-container{
@@ -783,250 +703,515 @@ align-items:start;
 
 }
 
-  .why-choose{
+/* ===============================
+   BUSINESS SERVICES
+================================= */
 
-padding:70px 20px;
+.business-services{
+    padding:80px 20px;
+    background:#f8fbff;
+    text-align:center;
+}
 
-background:#ffffff;
+.business-services h2{
+    font-size:40px;
+    color:#0d6efd;
+    margin-bottom:15px;
+}
 
-text-align:center;
+.business-services p{
+    max-width:800px;
+    margin:0 auto 45px;
+    color:#666;
+    font-size:18px;
+    line-height:1.8;
+}
 
+.business-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.business-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.business-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.business-card h3{
+    color:#0d6efd;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.business-card p{
+    color:#666;
+    font-size:16px;
+    line-height:1.7;
+}    
+
+ /* ==========================================
+   WHY CHOOSE US
+========================================== */
+
+.why-choose{
+    padding:80px 20px;
+    background:#ffffff;
+    text-align:center;
+}
+
+.why-choose h2{
+    font-size:40px;
+    color:#0d6efd;
+    margin-bottom:15px;
 }
 
 .choose-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:25px;
-
-margin-top:40px;
-
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:40px auto 0;
 }
 
 .choose-card{
-
-background:#fff;
-
-padding:30px;
-
-border-radius:20px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-transition:.3s;
-
+    background:#fff;
+    padding:35px 25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:all .35s ease;
 }
 
 .choose-card:hover{
-
-transform:translateY(-8px);
-
-}
-/* ===============================
-   Business Statistics
-================================= */
-   
-.business-stats {
-    padding: 0px;
-    background: #f8fbff;
-    text-align: center;
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
 }
 
-.business-stats h2 {
-    font-size: 40px;
-    color: #0d6efd;
-    margin-bottom: 10px;
+.choose-card .icon{
+    font-size:55px;
+    margin-bottom:20px;
 }
 
-.business-stats p {
-    color: #666;
-    margin-bottom: 45px;
-    font-size: 18px;
+.choose-card h3{
+    font-size:24px;
+    color:#0d6efd;
+    margin-bottom:12px;
 }
 
-.stats-grid {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
+.choose-card p{
+    color:#666;
+    line-height:1.7;
+    font-size:16px;
 }
 
-.stat-box {
-    background: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.08);
-    transition: .4s;
+/* ==========================================
+   PRICING SECTION
+========================================== */
+
+.pricing{
+    padding:80px 20px;
+    background:#eef6ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.stat-box:hover {
-    transform: translateY(-10px);
+.price-card{
+    background:#fff;
+    width:100%;
+    max-width:420px;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    transition:0.35s ease;
 }
 
-.stat-box h3 {
-    font-size: 48px;
-    color: #0d6efd;
-    margin-bottom: 10px;
+.price-card:hover{
+    transform:translateY(-8px);
 }
 
-.stat-box span {
-    font-size: 18px;
-    font-weight: 600;
-    color: #555;
+.price-card h4{
+    color:#0d6efd;
+    letter-spacing:2px;
+    font-size:16px;
+    margin-bottom:10px;
 }
 
-@media(max-width:1200px){
-
-.business-wrapper{
-
-grid-template-columns:repeat(2,1fr);
-
+.price-card h2{
+    font-size:56px;
+    color:#111;
+    margin:20px 0;
 }
 
+.price-sub{
+    color:#666;
+    margin-bottom:25px;
+    font-size:17px;
 }
 
-@media(max-width:768px){
-
-.business-wrapper{
-
-grid-template-columns:1fr;
-
+.price-card ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    text-align:left;
 }
 
+.price-card ul li{
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+    font-size:16px;
+}
+
+.price-card a{
+    display:block;
+    margin-top:30px;
+    background:#0d6efd;
+    color:#fff;
+    padding:15px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.price-card a:hover{
+    background:#0039b3;
+}
+
+
+/* ==========================================
+   TRUST SECTION
+========================================== */
+
+.trust-section{
+    padding:80px 20px;
+    background:#ffffff;
+    text-align:center;
+}
+
+.trust-section h2{
+    font-size:40px;
+    margin-bottom:45px;
+    color:#0d6efd;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.trust-box{
+    background:#f8fbff;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.trust-box:hover{
+    background:#0d6efd;
+    color:#fff;
+    transform:translateY(-8px);
+}
+
+.trust-box h3{
+    font-size:34px;
+    margin-bottom:12px;
+}
+
+.trust-box p{
+    font-size:17px;
+    font-weight:600;
+}
+
+.trust-box:hover h3,
+.trust-box:hover p{
+    color:#fff;
 }    
-/* ===============================
-   Pricing Card
-================================= */
 
-.pricing {
-    padding: 0px;
-    background: none;
-    display: block;
-    justify-content: center;
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+.website-container{
+grid-template-columns:1fr;
 }
 
-.price-card {
-    background: #fff;
-    width: 100%;
-    max-width: 380px;
-    padding: 40px;
-    border-radius: 25px;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+.website-right{
+margin-top:40px;
 }
 
-.price-card h4 {
-    color: #0d6efd;
-    letter-spacing: 2px;
+.feature-list{
+grid-template-columns:repeat(2,1fr);
 }
 
-.price-card h2 {
-    font-size: 55px;
-    margin: 20px 0;
-    color: #111;
+.choose-grid,
+.stats-grid,
+.trust-grid{
+grid-template-columns:repeat(2,1fr);
 }
 
-.price-sub {
-    color: #777;
-    margin-bottom: 30px;
 }
 
-.price-card ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.website-left h2{
+font-size:36px;
 }
 
-.price-card li {
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
+.website-left p{
+font-size:17px;
 }
 
-.price-card a {
-    display: block;
-    margin-top: 30px;
-    padding: 15px;
-    background: #0d6efd;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: .3s;
+.business-stats h2,
+.why-choose h2,
+.trust-section h2{
+font-size:34px;
 }
 
-.price-card a:hover {
-    background: #0039b3;
+.price-card{
+max-width:450px;
+margin:auto;
 }
 
-/* ===============================
-   Trust Section
-================================= */
-
-.trust-section {
-    padding: 0px 0px;
-    background: #fff;
-    text-align: center;
 }
 
-.trust-grid {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.website-dev,
+.business-stats,
+.pricing,
+.trust-section,
+.why-choose{
+padding:60px 15px;
 }
 
-.trust-box {
-    padding: 35px;
-    background: #f8fbff;
-    border-radius: 18px;
-    box-shadow: 0 8px 20px rgba(0,0,0,.08);
-    transition: .3s;
+.website-container{
+grid-template-columns:1fr;
+gap:35px;
 }
 
-.trust-box:hover {
-    background: #0d6efd;
-    color: #fff;
-    transform: scale(1.05);
+.website-left{
+text-align:center;
 }
 
-.trust-box h3 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.website-left h2{
+font-size:30px;
 }
 
-.trust-box p {
-    font-size: 17px;
-    font-weight: 600;
+.website-left p{
+font-size:16px;
 }
 
-/* ===============================
-   Responsive
-================================= */
-
-@media (max-width: 768px) {
-
-    .business-stats h2,
-    .trust-section h2 {
-        font-size: 30px;
-    }
-
-    .stat-box h3 {
-        font-size: 38px;
-    }
-
-    .price-card {
-        padding: 30px 20px;
-    }
-
-    .price-card h2 {
-        font-size: 42px;
-    }
+.feature-list{
+grid-template-columns:1fr;
 }
-    
+
+.buttons{
+justify-content:center;
+}
+
+.call-btn,
+.whatsapp-btn{
+width:100%;
+text-align:center;
+}
+
+.choose-grid,
+.stats-grid,
+.trust-grid{
+grid-template-columns:1fr;
+}
+
+.choose-card,
+.stat-box,
+.trust-box{
+padding:30px 20px;
+}
+
+.stat-box h3{
+font-size:40px;
+}
+
+.price-card{
+padding:30px 20px;
+}
+
+.price-card h2{
+font-size:42px;
+}
+
+.price-card li{
+font-size:15px;
+}
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+.website-left h2{
+font-size:26px;
+}
+
+.website-left p{
+font-size:15px;
+}
+
+.badge{
+font-size:13px;
+padding:8px 15px;
+}
+
+.website-right h3{
+font-size:24px;
+}
+
+.business-stats h2,
+.why-choose h2,
+.trust-section h2{
+font-size:28px;
+}
+
+.stat-box h3{
+font-size:34px;
+}
+
+.choose-card h3{
+font-size:20px;
+}
+
+.price-card h2{
+font-size:36px;
+}
+
+.price-card{
+padding:25px 18px;
+}
+
+}
+
+
+/* ==========================================
+   SMOOTH ANIMATION
+========================================== */
+
+.website-container,
+.choose-card,
+.stat-box,
+.price-card,
+.trust-box{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ==========================================
+   GLOBAL HOVER EFFECTS
+========================================== */
+
+.choose-card:hover,
+.stat-box:hover,
+.price-card:hover,
+.trust-box:hover{
+
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+
+/* ==========================================
+   BUTTON EFFECT
+========================================== */
+
+.call-btn,
+.whatsapp-btn,
+.price-card a{
+
+transition:all .3s ease;
+
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover,
+.price-card a:hover{
+
+transform:translateY(-3px);
+
+}
+
+
+/* ==========================================
+   IMAGE SAFETY
+========================================== */
+
+img{
+
+max-width:100%;
+
+height:auto;
+
+display:block;
+
+}
+
+
+/* ==========================================
+   BOX SIZING
+========================================== */
+
+*{
+
+box-sizing:border-box;
+
+}
 </style>    
 </head>
 
@@ -2883,15 +3068,14 @@ Noida, Uttar Pradesh - 201305
 
     <div class="website-container">
 
+        <!-- Left Content -->
         <div class="website-left">
 
             <span class="badge">
                 🚀 WEBSITE DEVELOPMENT
             </span>
 
-            <h2>
-                Your Business Deserves a Powerful Online Presence
-            </h2>
+            <h2>Your Business Deserves a Powerful Online Presence</h2>
 
             <p>
                 We design modern, responsive, secure, and SEO-friendly websites
@@ -2902,23 +3086,14 @@ Noida, Uttar Pradesh - 201305
             <div class="feature-list">
 
                 <div>✅ Mobile Responsive Design</div>
-
                 <div>✅ SEO Optimized Website</div>
-
                 <div>✅ Fast Loading Speed</div>
-
                 <div>✅ SSL Security</div>
-
                 <div>✅ Google Search Console Setup</div>
-
                 <div>✅ WhatsApp Integration</div>
-
                 <div>✅ Google Maps Integration</div>
-
                 <div>✅ Contact Forms</div>
-
                 <div>✅ Social Media Integration</div>
-
                 <div>✅ Domain & Hosting Support</div>
 
             </div>
@@ -2938,200 +3113,184 @@ Noida, Uttar Pradesh - 201305
             </div>
 
         </div>
-    
+
+        <!-- Right Content -->
+
         <div class="website-right">
 
-            <h3>
-                We Develop
-            </h3>
+            <h3>We Develop</h3>
 
             <ul>
 
                 <li>🏢 Business Website</li>
-
                 <li>🛒 E-Commerce Website</li>
-
                 <li>🏫 School & College Website</li>
-
                 <li>🏥 Hospital & Clinic Website</li>
-
                 <li>🏢 Company Website</li>
-
                 <li>🏭 Manufacturing Industry Website</li>
-
                 <li>🏗 Construction Website</li>
-
                 <li>🏛 NGO Website</li>
-
                 <li>🍽 Restaurant Website</li>
-
                 <li>⚖ Advocate Website</li>
-
                 <li>🩺 Doctor Website</li>
-
                 <li>🎓 Coaching Website</li>
-
                 <li>👤 Portfolio Website</li>
-
                 <li>📰 News Portal</li>
-
                 <li>💼 Job Portal</li>
-
                 <li>🌐 Government Service Portal</li>
 
             </ul>
 
         </div>
 
-    </div>   
-    
+    </div>
+
 </section>
 
-<!-- WHY CHOOSE US -->
- <section class="why-choose">
+<!-- ================= WHY CHOOSE US ================= -->
 
-        <h2>Why Choose Janseva Portal?</h2>
+<section class="why-choose">
 
-        <div class="choose-grid">
+    <h2>Why Choose Janseva Portal?</h2>
 
-            <div class="choose-card">
-                <div class="icon">🚀</div>
-                <h3>Fast Delivery</h3>
-                <p>Professional website delivered within 3–7 working days.</p>
-            </div>
+    <div class="choose-grid">
 
-            <div class="choose-card">
-                <div class="icon">🔒</div>
-                <h3>Secure Website</h3>
-                <p>SSL Security, Daily Backup & Secure Hosting.</p>
-            </div>
-
-            <div class="choose-card">
-                <div class="icon">📱</div>
-                <h3>Responsive Design</h3>
-                <p>Perfect on Mobile, Tablet & Desktop.</p>
-            </div>
-
-            <div class="choose-card">
-                <div class="icon">📈</div>
-                <h3>SEO Ready</h3>
-                <p>Optimized for Google Search & Better Ranking.</p>
-            </div>
-
+        <div class="choose-card">
+            <div class="icon">🚀</div>
+            <h3>Fast Delivery</h3>
+            <p>Professional website delivered within 3–7 working days.</p>
         </div>
 
-    </section>
-
-
-    <!-- BUSINESS STATS -->
-
-    <section class="business-stats">
-
-        <h2>Our Achievements</h2>
-
-        <p>Building Digital Success Stories Across India</p>
-
-        <div class="stats-grid">
-
-            <div class="stat-box">
-                <h3>50+</h3>
-                <span>Websites Delivered</span>
-            </div>
-
-            <div class="stat-box">
-                <h3>478+</h3>
-                <span>Happy Clients</span>
-            </div>
-
-            <div class="stat-box">
-                <h3>4.9★</h3>
-                <span>Average Rating</span>
-            </div>
-
-            <div class="stat-box">
-                <h3>24×7</h3>
-                <span>Support Available</span>
-            </div>
-
+        <div class="choose-card">
+            <div class="icon">🔒</div>
+            <h3>Secure Website</h3>
+            <p>SSL Security, Daily Backup & Secure Hosting.</p>
         </div>
 
-    </section>
-
-
-    <!-- PRICING -->
-
-    <section class="pricing">
-
-        <div class="price-card">
-
-            <h4>PREMIUM PLAN</h4>
-
-            <h2>₹7,999</h2>
-
-            <p class="price-sub">
-                Best Offer for Businesses & Companies
-            </p>
-
-            <ul>
-
-                <li>✔ Everything Included</li>
-                <li>✔ Payment Gateway</li>
-                <li>✔ Admin Dashboard</li>
-                <li>✔ Google Analytics Setup</li>
-                <li>✔ SEO Optimization</li>
-                <li>✔ WhatsApp Integration</li>
-                <li>✔ Contact Forms</li>
-                <li>✔ Google Maps</li>
-                <li>✔ SSL Security</li>
-                <li>✔ Free Domain Support</li>
-                <li>✔ Lifetime Technical Support*</li>
-
-            </ul>
-
-            <a href="https://wa.me/919557887780" target="_blank">
-                Get Started
-            </a>
-
+        <div class="choose-card">
+            <div class="icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Perfect on Mobile, Tablet & Desktop.</p>
         </div>
 
-    </section>
-
-    <!-- TRUST SECTION -->
-
-    <section class="trust-section">
-
-        <h2>Trusted by Hundreds of Clients</h2>
-
-        <div class="trust-grid">
-
-            <div class="trust-box">
-                <h3>⭐⭐⭐⭐⭐</h3>
-                <p>4.9 Average Rating</p>
-            </div>
-
-            <div class="trust-box">
-                <h3>150+</h3>
-                <p>Projects Completed</p>
-            </div>
-
-            <div class="trust-box">
-                <h3>100%</h3>
-                <p>Customer Satisfaction</p>
-            </div>
-
-            <div class="trust-box">
-                <h3>🔒 SSL</h3>
-                <p>Secure Website</p>
-            </div>
-
-            <div class="trust-box">
-                <h3>⚡ Fast</h3>
-                <p>Lightning Fast Loading</p>
-            </div>
-
+        <div class="choose-card">
+            <div class="icon">📈</div>
+            <h3>SEO Ready</h3>
+            <p>Optimized for Google Search & Better Ranking.</p>
         </div>
 
-    </section> 
+    </div>
+
+</section>
+
+<!-- ================= BUSINESS STATS ================= -->
+
+<section class="business-stats">
+
+    <h2>Our Achievements</h2>
+
+    <p>Building Digital Success Stories Across India</p>
+
+    <div class="stats-grid">
+
+        <div class="stat-box">
+            <h3>50+</h3>
+            <span>Websites Delivered</span>
+        </div>
+
+        <div class="stat-box">
+            <h3>478+</h3>
+            <span>Happy Clients</span>
+        </div>
+
+        <div class="stat-box">
+            <h3>4.9★</h3>
+            <span>Average Rating</span>
+        </div>
+
+        <div class="stat-box">
+            <h3>24×7</h3>
+            <span>Support Available</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PRICING ================= -->
+
+<section class="pricing">
+
+    <div class="price-card">
+
+        <h4>PREMIUM PLAN</h4>
+
+        <h2>₹7,999</h2>
+
+        <p class="price-sub">
+            Best Offer for Businesses & Companies
+        </p>
+
+        <ul>
+
+            <li>✔ Everything Included</li>
+            <li>✔ Payment Gateway</li>
+            <li>✔ Admin Dashboard</li>
+            <li>✔ Google Analytics Setup</li>
+            <li>✔ SEO Optimization</li>
+            <li>✔ WhatsApp Integration</li>
+            <li>✔ Contact Forms</li>
+            <li>✔ Google Maps</li>
+            <li>✔ SSL Security</li>
+            <li>✔ Free Domain Support</li>
+            <li>✔ Lifetime Technical Support*</li>
+
+        </ul>
+
+        <a href="https://wa.me/919557887780" target="_blank">
+            Get Started
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= TRUST SECTION ================= -->
+
+<section class="trust-section">
+
+    <h2>Trusted by Hundreds of Clients</h2>
+
+    <div class="trust-grid">
+
+        <div class="trust-box">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>4.9 Average Rating</p>
+        </div>
+
+        <div class="trust-box">
+            <h3>150+</h3>
+            <p>Projects Completed</p>
+        </div>
+
+        <div class="trust-box">
+            <h3>100%</h3>
+            <p>Customer Satisfaction</p>
+        </div>
+
+        <div class="trust-box">
+            <h3>🔒 SSL</h3>
+            <p>Secure Website</p>
+        </div>
+
+        <div class="trust-box">
+            <h3>⚡ Fast</h3>
+            <p>Lightning Fast Loading</p>
+        </div>
+
+    </div>
+
+</section>
     
 <footer class="footer">
 
